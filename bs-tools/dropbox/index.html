@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dropbox Upload</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+        #progress {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .phase-select {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h5 class="red-text">Dropbox Upload</h5>
+
+        <form>
+            <div id="forminner">
+                <div class="phase-select row">
+                    <div class="phase-selection input-field col s12">
+                        <select>
+                            <option value="" disabled selected>Select Your Phase</option>
+                            <option value="0">P0. Inspiration phase</option>
+                            <option value="1">P1. Ideation phase</option>
+                            <option value="2">P2. Evaluation phase</option>
+                            <option value="3">P3. Prototyping phase</option>
+                            <option value="4">P4. Restitution / Pitch</option>
+                        </select>
+
+                        <label>Phase Selection</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="file-field input-field col s12">
+                        <div class="waves-effect waves-light btn red">
+                            <span id="files-span">Select a pdf file on your computer</span>
+                            <input id="files-input" type="file" accept=".pdf">
+                        </div>
+                    </div>
+                </div>
+
+                <a class="waves-effect waves-light btn red lighten-4" id="submit-dropbox">Upload</a>
+            </div>
+
+            <div id="progress">
+                <p>
+                    <br><br><br>
+                    <br><br><br>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script type="text/javascript" src="../../js/isBrightspace.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

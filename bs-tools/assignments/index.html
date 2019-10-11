@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Assignments</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+    * {
+        font-family: 'Roboto', sans-serif;
+    }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card red">
+                    <div class="card-content">
+                        <p class="black-text"><b>
+                            All assignements are required.<br>
+                            Do not forget to send your assignements links with the following form.
+                        </b></p>
+                        <hr>
+                        <ul class="white-text">
+                            <li>- Post an "i made one" on thingiverse for 3D printing</li>
+                            <li>- Create a "personnal web page" on codepen.io for Web</li>
+                            <li>- Post an "i made one" on thingiverse for Laser cutting</li>
+                            <li>- Create a "traffic light" with Tinkercad Circuit for Arduino</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form>
+            <div id="forminner">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="print">3D printing, link to your "i made one" on Thingiverse:</label>
+                        <input id="print" name="print" class="u-full-width" type="text" required value="" placeholder="https://www.thingiverse.com/make:...">
+                        <span id="print-invalid" class="invalid">Invalid link: link should be like <em>https://www.thingiverse.com/make:...</em></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="web">Web, link to your "pen"on Codepen:</label>
+                        <input id="web" name="web" class="u-full-width" type="text" required value="" placeholder="https://codepen.io/...">
+                        <span id="web-invalid" class="invalid">Invalid link: link should be like <em>https://codepen.io/...</em></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="laser">Laser cutting, link to your "i made one" on Thingiverse:</label>
+                        <input id="laser" name="laser" class="u-full-width" type="text" required value="" placeholder="https://www.thingiverse.com/make:...">
+                        <span id="laser-invalid" class="invalid">Invalid link: link should be like <em>https://www.thingiverse.com/make:...</em></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="arduino">Electronics, link to your "circuit" on TinkerCad:</label>
+                        <input id="arduino" name="arduino" class="u-full-width" type="text" required value="" placeholder="https://www.tinkercad.com/things/...">
+                        <span id="arduino-invalid" class="invalid">Invalid link: link should be like <em>https://www.tinkercad.com/...</em></span>
+                    </div>
+                </div>
+
+                <a class="waves-effect waves-light btn red" id="submit-links">Submit links</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script type="text/javascript" src="../../js/isBrightspace.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

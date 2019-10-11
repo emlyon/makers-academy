@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Assignment</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+    * {
+        font-family: 'Roboto', sans-serif;
+    }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card red">
+                    <div class="card-content">
+                        <p class="white-text">
+                            <b>Do not forget to send your documentation link with the following form.</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form>
+            <div id="forminner">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="print">P4. Documentation phase, link to your "documentation" on Glitch</label>
+                        <input id="documentation" name="documentation" class="u-full-width" type="text" required value="" placeholder="https://glitch.com/...">
+                        <span id="exploration-invalid" class="invalid">Invalid link: link should be like <em>https://glitch.com/...</em></span>
+                    </div>
+                </div>
+                <a class="waves-effect waves-light btn red" id="submit-links">Submit your documentation</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script type="text/javascript" src="../../js/isBrightspace.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

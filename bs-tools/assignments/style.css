@@ -1,0 +1,22 @@
+.row {
+    margin-top: 10px;
+}
+
+.input-field label.active {
+    color: #000;
+    font-size: 0.9rem;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #d50000;
+    box-shadow: 0 1px 0 0 #d50000;
+}
+
+.invalid {
+    display: none;
+    color: #d50000;
+}
+
+form {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,67 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul a,
+nav .brand-logo {
+    color: #d80f0f;
+}
+
+p {
+    line-height: 2rem;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.inline-icon {
+   vertical-align: bottom;
+   font-size: 32px !important;
+}
+
+.button-collapse {
+    color: #d80f0f;
+}
+
+.icon-block {
+    padding: 0 15px;
+
+    .material-icons {
+        font-size: inherit;
+    }
+}
+
+#quizz {
+    .questionBlock {
+        margin-bottom: 20px;
+    }
+}
+
+.bs-only {
+    display: none;
+}
+
+.page-footer {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.card.red{
+    .ressources{
+        border-top: solid white 1px;
+        margin-top: 30px;
+    }
+
+    a {
+        color: white;
+        text-decoration: underline;
+        font-weight: 500;
+    }
+
+}
+
+#sidenav-overlay {
+    display: none;
+}
